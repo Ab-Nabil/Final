@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.afinal.CreateProfile.CreateGenderActivity;
+import com.example.afinal.Profiles.MainProfileActivity;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
@@ -71,6 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
                     toast.show();
                     //User Logged in Successfully Launch You home screen activity
                     Intent intent = new Intent(RegisterActivity.this, CreateGenderActivity.class);
+                    intent.putExtra("username",register_username.getText().toString());
                     startActivity(intent);
                     //finish();
                 }
