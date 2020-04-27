@@ -29,21 +29,29 @@
         <activity android:name=".Profiles.gymWorkoutActivity" />
         <activity android:name=".Profiles.MainProfileActivity" />
         <activity android:name=".CreateProfile.CreateActiveLevelActivity" />
-        <activity android:name=".CreateProfile.CreateFitLevelActivity" />
-        <activity android:name=".CreateProfile.CreateBdateActivity" />
+        <activity android:name=".CreateProfile.CreateFitLevelActivity" >
+
+        </activity>
+        <activity android:name=".CreateProfile.CreateBdateActivity" >
+
+        </activity>
         <activity android:name=".CreateProfile.CreateHeightActivity" />
-        <activity android:name=".CreateProfile.CreateWeightActivity" />
+        <activity android:name=".CreateProfile.CreateWeightActivity" >
+
+        </activity>
         <activity android:name=".CreateProfile.CreateGenderActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".OnBoardActivity" />
-        <activity android:name=".SplashActivity" >
+        <activity android:name=".RegisterActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".OnBoardActivity" />
+        <activity android:name=".SplashActivity" >
+
         </activity>
     </application>
 

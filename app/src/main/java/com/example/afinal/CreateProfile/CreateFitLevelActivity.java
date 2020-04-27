@@ -17,6 +17,7 @@ public class CreateFitLevelActivity extends AppCompatActivity implements View.On
     Button fitLevelBeginner;
     Button fitLevelIntermediate;
     Button fitLevelAdvanced;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
@@ -45,7 +46,10 @@ public class CreateFitLevelActivity extends AppCompatActivity implements View.On
                 flForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateFitLevelActivity.this, CreateActiveLevelActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateFitLevelActivity.this, CreateActiveLevelActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });
@@ -59,7 +63,10 @@ public class CreateFitLevelActivity extends AppCompatActivity implements View.On
                 flForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateFitLevelActivity.this, CreateActiveLevelActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateFitLevelActivity.this, CreateActiveLevelActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });
@@ -73,7 +80,10 @@ public class CreateFitLevelActivity extends AppCompatActivity implements View.On
                 flForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateFitLevelActivity.this, CreateActiveLevelActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateFitLevelActivity.this, CreateActiveLevelActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });

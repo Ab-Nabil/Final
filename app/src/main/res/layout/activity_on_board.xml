@@ -29,7 +29,7 @@
                     android:id="@+id/onboardimage1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/onboardimage1"
+                    android:src="@drawable/onboardimage2"
                     android:layout_above="@+id/onboardtexts1"
                     android:scaleType="fitXY"
                     />
@@ -86,7 +86,7 @@
                     android:id="@+id/onboardimage2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/onboardimage3"
+                    android:src="@drawable/onboardimage2"
                     android:layout_above="@+id/onboardtexts2"
                     android:scaleType="fitXY"
                     />

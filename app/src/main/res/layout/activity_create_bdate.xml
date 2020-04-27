@@ -103,6 +103,8 @@
             android:background="@drawable/enterdata"
             android:hint="ENTER YOUR BIRTH DATE ..."
             android:inputType="date"
+            android:ems="10"
+            android:focusable="false"
 
             android:layout_below="@+id/bDateImage"
             android:layout_centerInParent="true"

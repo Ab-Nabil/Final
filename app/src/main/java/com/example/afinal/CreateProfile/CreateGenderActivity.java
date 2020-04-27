@@ -44,7 +44,11 @@ public class CreateGenderActivity extends AppCompatActivity implements View.OnCl
                 genderForwardrow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateGenderActivity.this, CreateWeightActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                         intent = new Intent(CreateGenderActivity.this, CreateWeightActivity.class);
+
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });

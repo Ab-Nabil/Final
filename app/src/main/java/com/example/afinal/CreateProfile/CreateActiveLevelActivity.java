@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.example.afinal.Profiles.MainProfileActivity;
 import com.example.afinal.R;
+import com.example.afinal.RegisterActivity;
 
 public class CreateActiveLevelActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -49,7 +50,11 @@ public class CreateActiveLevelActivity extends AppCompatActivity implements View
                 aLForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });
@@ -65,7 +70,10 @@ public class CreateActiveLevelActivity extends AppCompatActivity implements View
                 aLForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });
@@ -80,7 +88,10 @@ public class CreateActiveLevelActivity extends AppCompatActivity implements View
                 aLForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });
@@ -95,7 +106,10 @@ public class CreateActiveLevelActivity extends AppCompatActivity implements View
                 aLForwardRow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        Intent intent = getIntent();
+                        String rUserName = intent.getStringExtra("username");
+                        intent=new Intent(CreateActiveLevelActivity.this, MainProfileActivity.class);
+                        intent.putExtra("username",rUserName);
                         startActivity(intent);
                     }
                 });
@@ -108,4 +122,5 @@ public class CreateActiveLevelActivity extends AppCompatActivity implements View
             }
         }
     }
+
 }

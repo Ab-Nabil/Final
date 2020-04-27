@@ -37,7 +37,12 @@ public class MainProfileActivity extends AppCompatActivity implements View.OnCli
         menuicon=(Button) findViewById(R.id.menuicon);
         logobackrow=(ImageView)findViewById(R.id.menuBackRow);
         cupcounter=(TextView) findViewById(R.id.cupcounterr);
+
+        Intent intent = getIntent();
+        String rUserName = intent.getStringExtra("username");
         usernamev=(TextView)findViewById(R.id.usernamev);
+        usernamev.setText(rUserName);
+
         checkcorrect=(ImageView)findViewById(R.id.checkcorrect);
         defuserimg=(ImageView)findViewById(R.id.defuserimg);
         gym=(ImageView)findViewById(R.id.gymworkout);
@@ -253,7 +258,11 @@ public class MainProfileActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void openProfileMenu(View view) {
-        Intent intent=new Intent(MainProfileActivity.this,ProfileMenuActivity.class);
+        Intent intent = getIntent();
+        String rUserName = intent.getStringExtra("username");
+         intent=new Intent(MainProfileActivity.this,ProfileMenuActivity.class);
+        intent.putExtra("username",rUserName);
+
         startActivity(intent);
     }
 
